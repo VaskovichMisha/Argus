@@ -1,0 +1,43 @@
+.title__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__title {
+    height: 87px;
+    width: auto;
+    align-self: start;
+}
+
+.title__under {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title__under span {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.title__under div {
+    position: relative;
+    margin-left: 20px;
+    font-weight: 700;
+    width: 20px;
+    cursor: pointer;
+}
+
+.title__lang {
+    font-size: 16px !important;
+    line-height: 100% !important;
+}
+
+.title__under img  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}

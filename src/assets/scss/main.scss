@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    line-height: 120%;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('src/assets/fonts/Gilroy-Bold.ttf') format('woff2');
+    src: url('src/assets/fonts/Gilroy-Regular.ttf') format('woff2');
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+._wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._container {
+    position: relative;
+    background: linear-gradient(111.45deg, #17181C 0%, #1A1F34 88.7%);
+    width: 1280px;
+    height: 800px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.wrapper__auth {
+    position: relative;
+    padding: 140px 95px 54px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__main {
+    position: relative;
+    padding: 50px 95px 54px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__img {
+    position: absolute;
+    top: 150px;
+    right: 56px;
+}
+
+.gradient__line {
+    margin-top: 6px;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90.54deg, #806491 22.06%, #00457E 85.49%);
+    border-radius: 10px;
+}
+
+.input {
+    width: 100%;
+    background: linear-gradient(to left, #00457E 0%, #806491 68.75%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    height: 54px;
+}
+
+.input:first-child {
+    background: linear-gradient(to right, #00457E 0%, #806491 68.75%);
+}
+
+.input input {
+    width: calc(100% - 4px);
+    height: 50px;
+    background: linear-gradient(111.45deg, #17181C 0%, #1A1F34 82.7%);
+    padding: 10px 20px;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.input input::placeholder {
+    text-align: center;
+    color: white;
+}
+
+

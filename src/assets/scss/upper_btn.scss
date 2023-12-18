@@ -1,0 +1,46 @@
+.upper-btn {
+    position: absolute;
+    z-index: 5;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.collapse__btn {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapse__btn div {
+    background: #fff;
+    width: 17px;
+    height: 1px;
+}
+
+.close__btn {
+  width: 18px;
+  height: 18px;
+}
+
+
+.close__btn:before,
+.close__btn:after {
+    content: "";
+    position: absolute;
+    left: 60%;
+    width: 17px;
+    height: 1px;
+    background: #fff;
+}
+
+.close__btn:before {
+   transform: rotate(45deg);
+}
+.close__btn:after {
+    transform: rotate(-45deg);
+}

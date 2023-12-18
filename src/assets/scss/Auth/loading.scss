@@ -1,0 +1,25 @@
+.loading {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.loading__title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.loading__title-block {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
