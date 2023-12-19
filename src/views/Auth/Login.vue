@@ -11,7 +11,10 @@
       <div class="input">
         <input type="password" placeholder="Пароль">
       </div>
-      <PlayButton class="login__play-btn" />
+      <PlayButton
+        @click="$router.push('loading')"
+        class="login__play-btn"
+      />
       <a href="restore-password" class="restore_password__link">Восстановить пароль</a>
     </div>
   </div>

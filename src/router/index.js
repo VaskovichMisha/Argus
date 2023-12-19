@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import AuthView from "@/layouts/AuthLoyout.vue";
 import Auth from "@/views/Auth/Login.vue";
 import RestorePassword from "@/views/Auth/RestorePassword.vue";
-import ConnectionError from "@/views/Auth/ConnectionError.vue";
 import Loading from "@/views/Auth/Loading.vue";
 import MainLoyout from "@/layouts/MainLoyout.vue";
 
@@ -19,10 +18,6 @@ const routes = [
       {
         path: 'restore-password',
         component: RestorePassword,
-      },
-      {
-        path: 'connection-error',
-        component: ConnectionError,
       },
       {
         path: 'loading',
