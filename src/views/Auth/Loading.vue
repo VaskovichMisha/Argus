@@ -2,23 +2,28 @@
   <div class="loading">
     <div class="loading__title">
       <div class="loading__title-block">
-        <span>Загрузка</span>
+        <span>Внимание</span>
         <div class="gradient__line"></div>
       </div>
-      <span>Проверяем Ваше соединение с интернетом. Пожалуйста подождите</span>
+      <span>Отсутствует соединение с интернетом</span>
     </div>
+
+    <GradientButton class="loading__btn">
+      Проверить
+    </GradientButton>
+
   </div>
 </template>
 
 <script>
 import GradientButton from "@/components/buttons/GradientButton.vue";
-
 export default {
-  components: {GradientButton}
-
+  components: {
+    GradientButton
+  }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "src/assets/scss/Auth/loading";
 </style>

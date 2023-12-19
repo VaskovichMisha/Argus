@@ -35,19 +35,27 @@
         </div>
       </div>
 
-
       <div v-if="openLoad" class="load-game">
-        <div class="load-game__circle">
-          <div>
-            95
-          </div>
-        </div>
+        <circle-progress
+            :size="160"
+            :empty-color="'#1A1F34'"
+            :border-width="6"
+            :border-bg-width="6"
+            :percent="85"
+            :viewport="true"
+            :show-percent="true"
+            :is-gradient="true"
+            :gradient="{
+              angle: 137,
+              startColor: '#00457E',
+              stopColor: '#806491'
+            }"
+        />
         <div class="load-game__info">
           <span>Загрузка...</span>
           <div>Minecraft launcher.exe</div>
         </div>
       </div>
-
 
     </div>
   </div>
@@ -57,6 +65,9 @@
 import SelectChangeServer from "@/components/selects/SelectChangeServer.vue";
 import PlayButton from "@/components/buttons/PlayButton.vue";
 import GradientButton from "@/components/buttons/GradientButton.vue";
+
+import CircleProgress from "vue3-circle-progress";
+import "vue3-circle-progress/dist/circle-progress.css";
 export default {
   data() {
     return {
@@ -80,10 +91,16 @@ export default {
     GradientButton,
     SelectChangeServer,
     PlayButton,
+    CircleProgress,
   }
 }
 </script>
 
 <style lang="scss">
+
+.vue3-circular-progressbar .current-counter {
+  font-size: 32px;
+  font-weight: 700;
+}
 @import "src/assets/scss/main_info";
 </style>
