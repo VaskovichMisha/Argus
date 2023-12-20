@@ -3,6 +3,9 @@
     height: 572px;
     padding-right: 8px;
     margin-top: 10px;
+    scrollbar-color: inherit;
+    border-radius: 9px;
+    scrollbar-width: thin;
 }
 
 .news::-webkit-scrollbar {
@@ -11,8 +14,8 @@
 }
 
 .news::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #00457E 0%, #806491 51.56%);
-    border-radius: 9em;
+    background-image: linear-gradient(180deg, #00457E 0%, #806491 51.56%);
+    border-radius: 9px;
 }
 
 .news__container {
@@ -62,4 +65,5 @@
     font-weight: 400;
     height: 28px;
     border-radius: 5px;
+    padding: 8px 40px !important;
 }

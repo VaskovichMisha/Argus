@@ -11,12 +11,17 @@ body {
     line-height: 120%;
     color: #fff;
     overflow-x: hidden;
+    font-weight: 700;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('src/assets/fonts/Gilroy-Bold.ttf') format('woff2');
-    src: url('src/assets/fonts/Gilroy-Regular.ttf') format('woff2');
+    src: url('src/assets/fonts/Gilroy-Bold.ttf') format('ttf');
+    src: url('src/assets/fonts/Gilroy-Regular.ttf') format('ttf');
+    src: url('src/assets/fonts/Gilroy-Bold.woff2') format('woff2');
+    src: url('src/assets/fonts/Gilroy-Regular.woff2') format('woff2');
+    src: url('src/assets/fonts/Gilroy-Bold.woff') format('woff');
+    src: url('src/assets/fonts/Gilroy-Regular.woff') format('woff');
 }
 
 
@@ -114,10 +119,14 @@ button {
     text-align: center;
     border-radius: 13px;
 }
-
 .input input::placeholder {
     text-align: center;
     color: white;
 }
+
+.input input::-moz-placeholder {
+    opacity: 1;
+}
+
 
 
