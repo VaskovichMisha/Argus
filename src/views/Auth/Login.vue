@@ -29,6 +29,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "src/assets/scss/Auth/login";
 </style>

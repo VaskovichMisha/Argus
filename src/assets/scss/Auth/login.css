@@ -1,0 +1,38 @@
+.login {
+  margin-top: 42px;
+  position: relative;
+  z-index: 3;
+}
+
+.login__title {
+  width: fit-content;
+}
+
+.login__title span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 450px;
+  margin-top: 38px;
+}
+
+.restore_password__link {
+  background-image: linear-gradient(256.04deg, #00457E -48.16%, #806491 81.34%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.login__play-btn {
+  font-size: 32px;
+}
+
+/*# sourceMappingURL=login.css.map */
