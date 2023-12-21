@@ -24,7 +24,7 @@ export default {
 .gradient__btn button {
   width: calc(100% - 4px);
   background: linear-gradient(111.45deg, #17181C 0%, #1A1F34 82.7%);
-  padding: 10px 40px;
+  padding: 4px 40px;
   font-family: 'Gilroy', sans-serif;
   line-height: 100%;
   color: white;

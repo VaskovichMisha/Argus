@@ -14,6 +14,9 @@ export default {
 <style lang="scss">
 .play__button {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
